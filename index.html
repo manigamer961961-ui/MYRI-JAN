@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOMINA NOOR ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="birthdayMusic" loop preload="auto">
+  <source
+    src="https://raw.githubusercontent.com/manigamer961961-ui/MOMINA-NOOR-/main/_ishq%20de%20fanniyar_%20_foryou%20_viral%20_trending%20_singing%20_tiktokgrowthchallenge%20(MP3)%20(2).mp3"
+    type="audio/mpeg">
+</audio>
+
+
+<!-- SCREEN 1 -->
+<section id="lockScreen" class="screen active">
+  <div class="lock-card">
+
+    <img
+      src="https://raw.githubusercontent.com/manigamer961961-ui/MOMINA-NOOR-/main/IMG-20260702-WA0003.jpg"
+      class="profile-pic"
+      alt="Birthday Photo">
+
+    <h1>LOCKED</h1>
+
+    <p class="hint">MY BIRTHDAY DATE AND MONTH 🎂</p>
+
+    <div id="passwordDisplay" class="password-display">
+      <span>—</span>
+      <span>—</span>
+      <span>—</span>
+      <span>—</span>
+    </div>
+
+    <p id="errorMessage" class="error"></p>
+
+    <div class="keypad">
+      <button onclick="pressKey('1')">1</button>
+      <button onclick="pressKey('2')">2</button>
+      <button onclick="pressKey('3')">3</button>
+
+      <button onclick="pressKey('4')">4</button>
+      <button onclick="pressKey('5')">5</button>
+      <button onclick="pressKey('6')">6</button>
+
+      <button onclick="pressKey('7')">7</button>
+      <button onclick="pressKey('8')">8</button>
+      <button onclick="pressKey('9')">9</button>
+
+      <button onclick="deleteKey()">⌫</button>
+      <button onclick="pressKey('0')">0</button>
+      <button class="empty"></button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 2 -->
+<section id="screen2" class="screen">
+  <div class="screen2-content">
+
+    <div class="screen2-heart">❤️</div>
+
+    <h1>WELCOME MY LOVE</h1>
+
+    <p>
+      This little world is made<br>
+      especially for you. ❤️
+      <br><br>
+      Are you ready for your<br>
+      birthday surprise? ✨
+    </p>
+
+    <button class="next-button" onclick="goToScreen3()">
+      LET'S START ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 3 -->
+<section id="screen3" class="screen">
+  <div class="name-reveal">
+
+    <div class="small-title">THIS JOURNEY IS FOR...</div>
+
+    <div class="reveal-heart">💖</div>
+
+    <h1>MOMINA NOOR</h1>
+
+    <p class="special">
+      ✨ YOU ARE VERY SPECIAL TO ME ✨
+    </p>
+
+    <p class="line">
+      Every beautiful story has a special person...
+      <br>
+      and in mine, that person is YOU. ❤️
+    </p>
+
+    <button class="next3" onclick="goToScreen4()">
+      NEXT →
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 4 -->
+<section id="screen4" class="screen">
+  <div class="memory-screen">
+
+    <div class="memory-hearts">
+      <span>❤️</span>
+      <span>💗</span>
+      <span>💕</span>
+      <span>💖</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="memory-heading">
+      OUR BEAUTIFUL MEMORIES
+    </div>
+
+    <div class="memory-frame">
+      <img id="memoryPhoto" src="" alt="Memory">
+    </div>
+
+    <div id="photoNumber" class="photo-number">
+      MEMORY 01 / 09
+    </div>
+
+    <button class="next4" onclick="goToScreen5()">
+      NEXT →
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 5 -->
+<section id="screen5" class="screen">
+  <div class="letter-screen">
+
+    <div class="letter-glow">💌</div>
+
+    <div class="letter-card">
+
+      <div class="letter-top">
+        A LITTLE LETTER FOR YOU
+      </div>
+
+      <h1>MY DEAR MOMINA ❤️</h1>
+
+      <p>
+        I don't know how to put everything
+        I feel into words...
+      </p>
+
+      <p>
+        But one thing I know for sure —
+        having you in my life makes
+        everything a little more beautiful. ✨
+      </p>
+
+      <p>
+        You are not just a part of my memories,
+        you are one of the reasons
+        I want to make more beautiful memories. ❤️
+      </p>
+
+      <div class="letter-love">
+        ALWAYS SPECIAL TO ME ❤️
+      </div>
+
+    </div>
+
+    <button class="next5" onclick="goToScreen6()">
+      NEXT →
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 6 -->
+<section id="screen6" class="screen">
+  <div class="screen6-content">
+
+    <div class="screen6-heart">💖</div>
+
+    <h1>
+      TO THE MOST<br>
+      SPECIAL PERSON
+    </h1>
+
+    <p>
+      There is something beautiful
+      waiting for you... ✨
+    </p>
+
+    <button class="next6" onclick="goToScreen7()">
+      OPEN IT ✨
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 7 -->
+<section id="screen7" class="screen">
+  <div class="screen7-content">
+
+    <div class="big-heart">❤️</div>
+
+    <h1>
+      YOU ARE MY<br>
+      FAVORITE PERSON
+    </h1>
+
+    <p>
+      And this is only the beginning
+      of your birthday surprise. 💕
+    </p>
+
+    <button class="next7" onclick="goToScreen8()">
+      NEXT ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 8 -->
+<section id="screen8" class="screen">
+  <div class="special-screen">
+
+    <div class="special-top-heart">💖</div>
+
+    <div class="special-card">
+
+      <div class="special-label">
+        SOMETHING FROM MY HEART
+      </div>
+
+      <h1>YOU ARE MY SPECIAL ❤️</h1>
+
+      <div class="special-divider">✦ ♥ ✦</div>
+
+      <div class="special-message">
+
+        <p>
+          Main aapse bohat zyada pyaar karta hoon. ❤️
+          Aap sirf meri life ka ek hissa nahi ho,
+          aap meri poori duniya ho.
+        </p>
+
+        <p>
+          Aap meri zindagi ho, meri khushi ho
+          aur meri sabse special person ho. ✨
+        </p>
+
+        <p>
+          Main shayad words mein kabhi explain na kar paun
+          ke aap mere liye kitni important ho,
+          lekin dil se bas itna kehna chahta hoon
+          ke aap jaisi ho, mere liye bilkul perfect ho. ❤️
+        </p>
+
+        <p>
+          Aap meri life mein ho,
+          mere liye yehi sabse beautiful cheez hai.
+          Main chahta hoon ke aap hamesha mere saath raho
+          aur hum dono mil kar bohat saari
+          beautiful memories banayein. 🥺❤️
+        </p>
+
+        <div class="final-love">
+          I LOVE YOU SO MUCH, MOMINA. ❤️
+        </div>
+
+        <div class="special-footer">
+          YOU WILL ALWAYS BE VERY SPECIAL TO ME. 💖
+        </div>
+
+      </div>
+    </div>
+
+    <button class="next8" onclick="goToScreen9()">
+      NEXT → ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 9 -->
+<section id="screen9" class="screen">
+  <div class="screen9-content">
+
+    <div class="screen9-heart">💕</div>
+
+    <h1>
+      A BEAUTIFUL<br>
+      STORY
+    </h1>
+
+    <p>
+      Our story is still being written... ✨
+    </p>
+
+    <button class="next9" onclick="goToScreen10()">
+      CONTINUE ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 10 -->
+<section id="screen10" class="screen">
+  <div class="video-screen">
+
+    <div class="video-hearts">
+      <span>❤️</span>
+      <span>💗</span>
+      <span>💕</span>
+      <span>💖</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="video-title">
+      THE LIFE I IMAGINE WITH YOU ❤️
+    </div>
+
+    <div class="video-frame">
+
+      <video
+        id="loveVideo"
+        class="love-video"
+        controls
+        playsinline
+        preload="metadata">
+
+        <source
+          src="https://raw.githubusercontent.com/manigamer961961-ui/MOMINA-NOOR-/main/VID-20260810-WA0004.mp4"
+          type="video/mp4">
+
+      </video>
+
+    </div>
+
+    <button class="next10" onclick="goToScreen11()">
+      NEXT → ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 11 -->
+<section id="screen11" class="screen">
+  <div class="screen11-content">
+
+    <div class="screen11-small">
+      IF I COULD GIVE YOU ONE THING...
+    </div>
+
+    <div class="screen11-heart">💖</div>
+
+    <div class="screen11-card">
+
+      <h1>
+        IF I COULD GIVE<br>
+        YOU ONE THING...
+      </h1>
+
+      <div class="screen11-line">
+        ✦ ❤️ ✦
+      </div>
+
+      <p>
+        I would give you the ability
+        to see yourself through my eyes...
+      </p>
+
+      <p>
+        So you could finally understand
+        how special you really are to me. ❤️
+      </p>
+
+      <div class="screen11-love">
+        YOU DESERVE ALL THE HAPPINESS
+        IN THE WORLD. ✨
+      </div>
+
+    </div>
+
+    <button class="next11" onclick="goToScreen12()">
+      NEXT → ❤️
+    </button>
+
+  </div>
+</section>
+
+
+<!-- SCREEN 12 -->
+<section id="screen12" class="screen">
+
+  <div class="birthday-wish">
+
+    <div class="wish-crown">✨</div>
+
+    <h1>
+      HAPPY BIRTHDAY,<br>
+      MERI JAAN ❤️
+    </h1>
+
+    <div class="wish-heart">🎂</div>
+
+    <div class="wish-card">
+
+      <p>
+        Meri wish hai ke aap hamesha khush rahain,
+        hamesha smile karti rahain,
+        aur aapki life mein har woh cheez aaye
+        jo aap deserve karti hain. ❤️
+      </p>
+
+      <p>
+        Main bas ye chahta hoon ke aap hamesha
+        apni beautiful smile ke saath rahain,
+        kyunki aapki khushi mere liye
+        bohat matter karti hai. ✨
+      </p>
+
+      <p>
+        Aap meri life mein ho,
+        mere liye yehi sabse beautiful cheez hai. ❤️
+      </p>
+
+      <div class="wish-final">
+        HAPPY BIRTHDAY MOMINA NOOR ❤️
+      </div>
+
+    </div>
+
+    <button class="next12" onclick="goToScreen13()">
+      NEXT → ❤️
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- SCREEN 13 -->
+<section id="screen13" class="screen">
+
+  <div class="screen13-content">
+
+    <div class="cake">🎂</div>
+
+    <h1>MAKE A WISH, MERI JAAN ❤️</h1>
+
+    <p>
+      May every wish of yours come true. ✨
+    </p>
+
+    <button class="next13" onclick="goToScreen14()">
+      NEXT → ❤️
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- SCREEN 14 -->
+<section id="screen14" class="screen">
+
+  <div class="future-screen">
+
+    <div class="future-stars">
+      <span>✨</span>
+      <span>💖</span>
+      <span>✨</span>
+      <span>❤️</span>
+      <span>✨</span>
+    </div>
+
+    <div class="future-small">
+      A DREAM FOR TOMORROW
+    </div>
+
+    <div class="future-heart">
+      💍
+    </div>
+
+    <h1>
+      OUR FUTURE ❤️
+    </h1>
+
+    <div class="future-card">
+
+      <p>
+        Main chahta hoon ke aane wale har din
+        mein aap mere saath rahain. ❤️
+      </p>
+
+      <p>
+        Hum saath bohat si memories banayein,
+        saath smile karein,
+        aur har mushkil ko saath face karein.
+      </p>
+
+      <p>
+        Mujhe nahi pata future kaisa hoga,
+        lekin ek cheez zaroor chahta hoon...
+      </p>
+
+      <div class="future-final">
+        USKI HAR KAHANI MEIN<br>
+        AAP HON. ❤️
+      </div>
+
+      <p>
+        Aap mere liye sirf aaj special nahi ho,
+        main chahta hoon ke aap meri
+        har kal ka hissa bhi rahain. 🥺❤️
+      </p>
+
+    </div>
+
+    <button class="next14" onclick="goToScreen15()">
+      ONE LAST SURPRISE → ❤️
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- SCREEN 15 -->
+<section id="screen15" class="screen">
+
+  <div class="final-screen">
+
+    <div class="final-confetti">
+      🎉 ❤️ 🎊 💖 🎉
+    </div>
+
+    <div class="final-cake">
+      🎂
+    </div>
+
+    <div class="final-small">
+      FOR THE MOST SPECIAL PERSON
+    </div>
+
+    <h1>
+      HAPPY BIRTHDAY<br>
+      MERI JAAN ❤️
+    </h1>
+
+    <div class="final-name">
+      MOMINA NOOR
+    </div>
+
+    <p>
+      Aap meri life ki sabse beautiful
+      memories mein se ek ho. ❤️
+    </p>
+
+    <p>
+      Hamesha khush rahain,
+      hamesha smile karti rahain,
+      aur kabhi ye mat bhoolna...
+    </p>
+
+    <div class="final-message">
+      YOU ARE LOVED.<br>
+      YOU ARE SPECIAL.<br>
+      YOU ARE MY WORLD. ❤️
+    </div>
+
+    <div class="final-hearts">
+      ❤️ 💖 ❤️ 💕 ❤️
+    </div>
+
+  </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
